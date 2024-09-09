@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "The Medic World Hospital", "D:\The Medic World Hospital\", "{E7A05F9B-3A04-41F2-9029-9156C61B46BD}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/The Medic World Hospital"
+		Debug.AspNetCompiler.PhysicalPath = "D:\The Medic World Hospital\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\The Medic World Hospital\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/The Medic World Hospital"
+		Release.AspNetCompiler.PhysicalPath = "D:\The Medic World Hospital\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\The Medic World Hospital\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50043"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7A05F9B-3A04-41F2-9029-9156C61B46BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7A05F9B-3A04-41F2-9029-9156C61B46BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
