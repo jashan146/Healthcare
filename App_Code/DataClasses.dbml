@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HOSPITALDatabase" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\HOSPITALDatabase.mdf;Integrated Security=True;User Instance=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="HOSPITALDatabaseConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AppointmentTable" Member="AppointmentTables">
+    <Type Name="AppointmentTable">
+      <Column Name="DoctorID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AppointmentID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DoctorName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PatientName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Age" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="VisitingDate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Mobile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CurrentDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdProof" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BloodBank" Member="BloodBanks">
+    <Type Name="BloodBank">
+      <Column Name="BloodBankID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BloodGroup" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BloodRequirement" Member="BloodRequirements">
+    <Type Name="BloodRequirement">
+      <Column Name="BloodRequirementID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="MobileNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IDproof" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="BloodGroup" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Requirement" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RequiremntDate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CurrentDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CareerTable" Member="CareerTables">
+    <Type Name="CareerTable">
+      <Column Name="CareerID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MobileNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Experience" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Resume" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CurrentDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CityState" Member="CityStates">
+    <Type Name="CityState">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="City" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DepartmentTable" Member="DepartmentTables">
+    <Type Name="DepartmentTable">
+      <Column Name="DepartmentID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DepartmentName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DepartmentImage" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DepartmentDescription" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DoctorTable" Member="DoctorTables">
+    <Type Name="DoctorTable">
+      <Column Name="DoctorID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DoctorName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Qualification" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DepartmentID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HospitalAffiliations" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MobileNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Timing" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Days" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EnquiryTable" Member="EnquiryTables">
+    <Type Name="EnquiryTable">
+      <Column Name="EnquiryID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MobileNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Query" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CurrentDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FeedbackTable" Member="FeedbackTables">
+    <Type Name="FeedbackTable">
+      <Column Name="FeedbackID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MobileNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FeedbackType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Comment" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CurrentDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PackageTable" Member="PackageTables">
+    <Type Name="PackageTable">
+      <Column Name="PackageID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PackageName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Item1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Item2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Item3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Item4" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Item5" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Item6" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Item7" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Item8" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Cost" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RegisterPackage" Member="RegisterPackages">
+    <Type Name="RegisterPackage">
+      <Column Name="RegisterID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PackageName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Age" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MobileNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="CurrentDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
